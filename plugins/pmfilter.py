@@ -1390,11 +1390,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('𖧵 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 𖧵', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true',style=enums.ButtonStyle.SUCCESS)
-                     ],[
-                        InlineKeyboardButton('𖣠‌ ʜᴇʟᴘ 𖣠‌', callback_data='help',style=enums.ButtonStyle.PRIMARY),
-                        InlineKeyboardButton('᪥ ᴀʙᴏᴜᴛ ᪥', callback_data='about',style=enums.ButtonStyle.PRIMARY),
-                     ]]
+                    InlineKeyboardButton('✧ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✧', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true', style=enums.ButtonStyle.SUCCESS)
+                ],[
+                    InlineKeyboardButton('𖣠‌ ʜᴇʟᴘ 𖣠‌ ', callback_data="help", style=enums.ButtonStyle.PRIMARY),
+                     InlineKeyboardButton('᪥ ᴀʙᴏᴜᴛ ᪥', callback_data="about", style=enums.ButtonStyle.PRIMARY),
+                ]]
             reply_markup = InlineKeyboardMarkup(buttons)
             current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour
