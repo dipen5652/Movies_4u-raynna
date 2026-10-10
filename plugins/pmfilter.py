@@ -1398,8 +1398,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('⛑️ ʜᴇʟᴩ ', callback_data="help", style=enums.ButtonStyle.DANGER),
                      InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info", style=enums.ButtonStyle.PRIMARY),
                 ]]
-            reply_markup = InlineKeyboardMarkup(buttons)
-            current_time = datetime.now(pytz.timezone(TIMEZONE))
+        reply_markup = InlineKeyboardMarkup(buttons)
+        current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour
         if curr_time < 12:
             gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 🌞"
