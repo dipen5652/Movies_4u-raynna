@@ -121,9 +121,7 @@ async def start(client, message):
                     temp.U_NAME,
                     temp.B_NAME
                 ),
-                reply_markup=reply_markup
-            )
-
+                reply_markup=reply_markup, disable_web_page_preview=True)
             await sticker.delete()
             await asyncio.sleep(2)
             if not await db.get_chat(message.chat.id):
