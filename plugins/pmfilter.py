@@ -1460,10 +1460,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer', style=enums.ButtonStyle.SUCCESS),
-            InlineKeyboardButton (' 🌹 ᴄʜᴀᴛꜱ 🌹 ', callback_data='source', style=enums.ButtonStyle.PRIMARY),
-        ],[
-            InlineKeyboardButton('ᴅᴏɴᴀᴛɪᴏɴ 💰', callback_data='donation'),
+            InlineKeyboardButton('❃ ɢʀᴏᴜᴘ ❃', url='https://t.me/movies_4uz', style=enums.ButtonStyle.SUCCESS),
+            InlineKeyboardButton (' ⫹⫺ ᴄʜᴀɴɴᴇʟ ⫹⫺ ', url='https://t.me/movies4u_backup', style=enums.ButtonStyle.SUCCESS),
         ],[
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ᴛᴏ ʜᴏᴍᴇ ⇋', callback_data='start', style=enums.ButtonStyle.DANGER)
         ]]
