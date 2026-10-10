@@ -1390,16 +1390,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('✧ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✧', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true', style=enums.ButtonStyle.SUCCESS)
-                ],[
-                    InlineKeyboardButton(' ✨ ᴛᴏᴘ sᴇᴀʀᴄʜɪɴɢ  ', callback_data='topsearch', style=enums.ButtonStyle.PRIMARY),
-                    InlineKeyboardButton(' ᴀʙᴏᴜᴛ 📖', callback_data='about', style=enums.ButtonStyle.DANGER)
-                ],[
-                    InlineKeyboardButton('⛑️ ʜᴇʟᴩ ', callback_data="help", style=enums.ButtonStyle.DANGER),
-                     InlineKeyboardButton('ᴜᴘɢʀᴀᴅᴇ 🎟', callback_data="premium_info", style=enums.ButtonStyle.PRIMARY),
-                ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        current_time = datetime.now(pytz.timezone(TIMEZONE))
+                    InlineKeyboardButton('𖧵 ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 𖧵', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true'style=enums.ButtonStyle.SUCCESS)
+                     ],[
+                        InlineKeyboardButton('𖣠‌ ʜᴇʟᴘ 𖣠‌', callback_data='help'style=enums.ButtonStyle.PRIMARY),
+                        InlineKeyboardButton('᪥ ᴀʙᴏᴜᴛ ᪥', callback_data='about'style=enums.ButtonStyle.PRIMARY),
+                     ]]
+            reply_markup = InlineKeyboardMarkup(buttons)
+            current_time = datetime.now(pytz.timezone(TIMEZONE))
         curr_time = current_time.hour
         if curr_time < 12:
             gtxt = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ 🌞"
