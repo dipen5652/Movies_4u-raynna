@@ -9,11 +9,12 @@ class script(object):
 <blockquote>🫟 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://telegram.me/admnsprt_bot">[ᴍʀ•ᴅɪᴘᴀᴋ]</a></blockquote>"""
 
 
-    GSTART_TXT = """ʜᴇʏ {},
+    GSTART_TXT = """"ʜᴇʏ {},
 
 <b>🤖 ɪ ᴀᴍ <a href="https://t.me/{}">{}</a>, ʏᴏᴜʀ ᴘᴇʀꜱᴏɴᴀʟ ᴍᴏᴠɪᴇ ᴀꜱɪꜱᴛᴀɴᴛ.
 
-⚡ ꜱᴇᴀʀᴄʜ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ</b>"""
+⚡ ꜱᴇᴀʀᴄʜ ᴀɴʏ ᴍᴏᴠɪᴇ ᴏʀ ꜱᴇʀɪᴇꜱ ɴᴀᴍᴇ
+<blockquote>🫟 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://telegram.me/admnsprt_bot">[ᴍʀ•ᴅɪᴘᴀᴋ]</a></blockquote>"""
     
     HELP_TXT = """⦿━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⦿
 <blockquote>🎦 ᴍᴏᴠɪᴇs</blockquote>
