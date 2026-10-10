@@ -165,7 +165,7 @@ async def start(client, message):
             )
             return
 
-        if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
+        if len(message.command) != 2:
             buttons = [[
                     InlineKeyboardButton('✧ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✧', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true', style=enums.ButtonStyle.SUCCESS)
                 ],[
