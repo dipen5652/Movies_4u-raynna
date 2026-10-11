@@ -1334,48 +1334,7 @@
             </div>
         </section>
 
-        <!-- ========================================================
-             SEARCH MOVIES & POPULAR SHOWCASE (RIGHT ABOVE EXPLORE)
-             ======================================================== -->
-        <section class="movies-section" id="movies-section">
-            <div class="movies-section-header">
-                <div class="movies-title-box">
-                    <h2 class="movies-title" id="movies-section-title">
-                        <i class="fas fa-fire"></i> Trending & Popular Movies
-                    </h2>
-                    <span class="movies-subtitle" id="movies-section-subtitle">Tap any poster for full details or search any movie</span>
-                </div>
-
-                <!-- Live Search Bar -->
-                <div class="search-movie-bar">
-                    <div class="search-input-wrap">
-                        <i class="fas fa-search search-icon"></i>
-                        <input
-                            type="text"
-                            id="movie-search-input"
-                            class="movie-search-input"
-                            placeholder="Type movie name (e.g. Inception, Marvel)..."
-                            autocomplete="off"
-                            oninput="handleSearchInput(event)"
-                            onkeydown="handleSearchKey(event)"
-                        />
-                        <button id="search-clear-btn" class="search-clear-btn" onclick="clearMovieSearch()" title="Clear Search & Restore Trending">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <button class="search-submit-btn" onclick="executeMovieSearch()">
-                        <i class="fas fa-search"></i> <span>Search</span>
-                    </button>
-                </div>
-            </div>
-
-            <div id="movies-container" class="movies-grid">
-                <div class="movies-loader">
-                    <i class="fas fa-circle-notch fa-spin"></i>
-                    <span>Loading latest popular blockbusters...</span>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Explore Our Services Section -->
         <div class="services-section" id="services-section">
