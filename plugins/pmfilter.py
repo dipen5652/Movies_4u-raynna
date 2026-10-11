@@ -221,7 +221,7 @@ async def next_page(bot, query):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽", callback_data=f"sendfiles#{key}", style=enums.ButtonStyle.SUCCESS)
+                           "🗃️ Sᴇɴᴅ Aʟʟ 🗃️", callback_data=f"sendfiles#{key}", style=enums.ButtonStyle.SUCCESS)
 
                    ]
                    )
@@ -239,7 +239,7 @@ async def next_page(bot, query):
                    ]
                    )
         btn.insert(0, [
-            InlineKeyboardButton("᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽", callback_data=f"sendfiles#{key}", style=enums.ButtonStyle.SUCCESS)
+            InlineKeyboardButton("🗃️ Sᴇɴᴅ Aʟʟ 🗃️", callback_data=f"sendfiles#{key}", style=enums.ButtonStyle.SUCCESS)
         ])
     if ULTRA_FAST_MODE:
         if 0 < offset <= 10:
@@ -400,7 +400,7 @@ async def advantage_spoll_choker(bot, query):
             except Exception as e:
                 logger.error("Error In Spol: %s — Make Sure Bot Admin BIN CHANNEL", e)
         btn = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🔰Cʟɪᴄᴋ ʜᴇʀᴇ & ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴀᴅᴍɪɴ🔰", url=OWNER_LNK)]])
+            [[InlineKeyboardButton("ʀᴇǫᴜᴇsᴛ 📝 ᴀᴅᴍɪɴ", url=OWNER_LNK))]])
         k = await query.message.edit(script.MVE_NT_FND, reply_markup=btn)
         await asyncio.sleep(10)
         await k.delete()
@@ -492,7 +492,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0,
     [
         InlineKeyboardButton(
-            "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽",
+            "🗃️ Sᴇɴᴅ Aʟʟ 🗃️",
             callback_data=f"sendfiles#{key}",
             style=enums.ButtonStyle.SUCCESS
         )
@@ -512,7 +512,7 @@ async def filter_qualities_cb_handler(client: Client, query: CallbackQuery):
         btn.insert(0,
                    [
                        InlineKeyboardButton(
-                           "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽", callback_data=f"sendfiles#{key}", style=enums.ButtonStyle.SUCCESS)
+                           "🗃️ Sᴇɴᴅ Aʟʟ 🗃️", callback_data=f"sendfiles#{key}", style=enums.ButtonStyle.SUCCESS)
 
                    ])
     if offset != "":
@@ -648,7 +648,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                    )
         [
     InlineKeyboardButton(
-        "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽",
+        "🗃️ Sᴇɴᴅ Aʟʟ 🗃️",
         callback_data=f"sendfiles#{key}",
         style=enums.ButtonStyle.SUCCESS
     )
@@ -667,7 +667,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
                    )
         [
     InlineKeyboardButton(
-        "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽",
+        "🗃️ Sᴇɴᴅ Aʟʟ 🗃️",
         callback_data=...,
         style=enums.ButtonStyle.SUCCESS
     )
@@ -800,7 +800,7 @@ async def filter_seasons_cb_handler(client: Client, query: CallbackQuery):
     )
     [
     InlineKeyboardButton(
-        "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽",
+        "🗃️ Sᴇɴᴅ Aʟʟ 🗃️",
         callback_data=...,
         style=enums.ButtonStyle.SUCCESS
     )
@@ -1770,7 +1770,7 @@ async def auto_filter(client, msg, spoll=False):
                        )
             [
     InlineKeyboardButton(
-        "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽",
+        "🗃️ Sᴇɴᴅ Aʟʟ 🗃️",
         callback_data=...,
         style=enums.ButtonStyle.SUCCESS
     )
@@ -1789,7 +1789,7 @@ async def auto_filter(client, msg, spoll=False):
                        )
             [
     InlineKeyboardButton(
-        "᯽ 🅂🄴🄽🄳 🄰🄻🄻 ᯽",
+        "🗃️ Sᴇɴᴅ Aʟʟ 🗃️",
         callback_data=...,
         style=enums.ButtonStyle.SUCCESS
     )
@@ -1979,7 +1979,7 @@ async def advantage_spell_chok(client, message):
     if not movies:
         google = quote_plus(search)
         button = [[InlineKeyboardButton(
-            "🔍 ᴄʜᴇᴄᴋ sᴘᴇʟʟɪɴɢ ᴏɴ ɢᴏᴏɢʟᴇ 🔍", url=f"https://www.google.com/search?q={google}", style=enums.ButtonStyle.PRIMARY)]]
+            "ʀᴇǫᴜᴇsᴛ 📝 ᴀᴅᴍɪɴ", url=OWNER_LNK, style=enums.ButtonStyle.PRIMARY)]]
         k = await message.reply_text(text=script.I_CUDNT.format(search), reply_markup=InlineKeyboardMarkup(button))
         await asyncio.sleep(60)
         await k.delete()
